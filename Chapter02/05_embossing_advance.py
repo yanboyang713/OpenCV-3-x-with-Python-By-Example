@@ -1,7 +1,7 @@
 import cv2 
 import numpy as np 
  
-img = cv2.imread('images/geometric.png', cv2.IMREAD_GRAYSCALE) 
+img = cv2.imread('./images/geometrics_input.png', cv2.IMREAD_GRAYSCALE)
 rows, cols = img.shape 
  
 # It is used depth of cv2.CV_64F.
@@ -20,4 +20,4 @@ cv2.imshow('Sobel vertical', sobel_vertical)
 cv2.imshow('Laplacian', laplacian)
 cv2.imshow('Canny', canny)
  
-cv2.waitKey(0) 
+cv2.waitKey(0)

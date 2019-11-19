@@ -23,7 +23,7 @@ if __name__=='__main__':
         ret, frame = cap.read() 
  
         # Resize the captured image 
-        frame = cv2.resize(frame, None, fx=0.5, fy=0.5, interpolation=cv2.INTER_AREA) 
+        #frame = cv2.resize(frame, None, fx=0.5, fy=0.5, interpolation=cv2.INTER_AREA)
  
         c = cv2.waitKey(1)
         if c == 27: 
@@ -43,4 +43,4 @@ if __name__=='__main__':
         cv2.imshow('Webcam', output) 
  
     cap.release() 
-    cv2.destroyAllWindows() 
+    cv2.destroyAllWindows()

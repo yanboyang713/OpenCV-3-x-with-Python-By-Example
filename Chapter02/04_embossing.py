@@ -1,7 +1,7 @@
 import cv2 
 import numpy as np 
  
-img_emboss_input = cv2.imread('images/input.jpg') 
+img_emboss_input = cv2.imread('images/house_input.png')
  
 # generating the kernels 
 kernel_emboss_1 = np.array([[0,-1,-1], 

@@ -6,7 +6,7 @@ def draw_rectangle(event, x, y, flags, params):
     def update_pts():
         params["top_left_pt"] = (min(x_init, x), min(y_init, y))
         params["bottom_right_pt"] = (max(x_init, x), max(y_init, y))
-        img[y_init:y, x_init:x] = 255 - img[y_init:y, x_init:x]
+        #img[y_init:y, x_init:x] = 255 - img[y_init:y, x_init:x]
     if event == cv2.EVENT_LBUTTONDOWN: 
         drawing = True 
         x_init, y_init = x, y 

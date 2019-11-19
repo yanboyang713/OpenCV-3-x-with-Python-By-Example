@@ -1,7 +1,8 @@
 import cv2 
 import numpy as np 
  
-def detect_quadrant(event, x, y, flags, param): 
+def detect_quadrant(event, x, y, flags, param):
+    #detect mouse click
     if event == cv2.EVENT_LBUTTONDOWN: 
         if x > width/2: 
             if y > height/2: 
@@ -20,10 +21,11 @@ def detect_quadrant(event, x, y, flags, param):
                 point_bottom_right = (int(width/2), int(height/2)) 
 
         img = param["img"]
+        #draw a rectangle
         # Repaint all in white again
         cv2.rectangle(img, (0,0), (width-1,height-1), (255,255,255), -1)
         # Paint green quadrant 
-        cv2.rectangle(img, point_top_left, point_bottom_right, (0,100,0), -1) 
+        cv2.rectangle(img, point_top_left, point_bottom_right, (100,0,0), -1)
  
 if __name__=='__main__': 
     width, height = 640, 480 
